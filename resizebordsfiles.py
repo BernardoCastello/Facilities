@@ -18,5 +18,6 @@ for count, filename in enumerate(os.listdir(path)):
     )
 
     n = str(count+1).zfill(5)   #rename file name with leading zeros
+    print(n)
     cv2.imwrite(f"path.png", border)   # final path to file with images
 
