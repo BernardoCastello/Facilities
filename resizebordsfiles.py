@@ -4,7 +4,8 @@ import cv2
 
 path = f"path"     # path to file with images
 for count, filename in enumerate(os.listdir(path)):              
-    im = cv2.imread(path)
+    namefile = path + "\\" + filename                 # exact image
+    im = cv2.imread(namefile)
 
     border = cv2.copyMakeBorder(
     im,
